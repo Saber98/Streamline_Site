@@ -20,7 +20,36 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Customers',
     icon: 'nb-person',
-    link: 'customers',
+    expanded: true,
+    children: [
+      {
+        title: 'New Customer',
+        icon: 'nb-plus',
+        link: 'customers/customer-add',
+      },
+      {
+        title: 'Customer Search',
+        icon: 'nb-search',
+        link: 'customers/customer-search',
+      },
+    ],
+  },
+  {
+    title: 'Contacts',
+    icon: 'nb-phone',
+    expanded: true,
+    children: [
+      {
+        title: 'New Contact',
+        icon: 'nb-plus',
+        link: 'contacts/contact-add',
+      },
+      {
+        title: 'Contact Search',
+        icon: 'nb-search',
+        link: 'contacts/contact-search',
+      },
+    ],
   },
   {
     title: 'Orders',
@@ -37,8 +66,17 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-edit',
     link: 'purchasing',
   },
-
-  /* {
+  {
+    title: 'Tables',
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Smart Table',
+        link: '/pages/tables/smart-table',
+      },
+    ],
+  },
+  {
     title: 'FEATURES',
     group: true,
   },
@@ -258,7 +296,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/miscellaneous/404',
       },
     ],
-  }, */
+  },
   /* {
     title: 'Auth',
     icon: 'nb-locked',

@@ -22,7 +22,7 @@ export class ECommerceComponent {
     title: 'Customers',
     iconClass: 'nb-person',
     type: 'primary',
-    link: '#/pages/customers',
+    link: '#/pages/customers/customer-search',
   };
   ordersCard: CardSettings = {
     title: 'Orders',

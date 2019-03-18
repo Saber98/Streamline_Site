@@ -88,7 +88,7 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
     EarningCardBackComponent,
     EarningPieChartComponent,
     EarningLiveUpdateChartComponent,
-    StatusLinkCardComponent
+    StatusLinkCardComponent,
   ],
   providers: [
     CountryOrdersMapService,

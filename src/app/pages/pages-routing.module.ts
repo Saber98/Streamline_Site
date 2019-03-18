@@ -10,6 +10,9 @@ const routes: Routes = [{
   path: '',
   component: PagesComponent,
   children: [{
+    path: 'customers',
+    loadChildren: './customers/customers.module#CustomersModule',
+  }, {
     path: 'dashboard',
     component: ECommerceComponent,
   }, {

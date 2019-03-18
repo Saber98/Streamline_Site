@@ -22,12 +22,12 @@ export class HeaderComponent implements OnInit {
 
   userMenu = [
         {
-          title: 'Profile"',
+          title: 'Profile',
           link: '',
         },
         {
           title: 'Log out',
-          link: 'auth/logout'
+          link: 'auth/logout',
         }
       ]
 
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
                 this.authService.onTokenChange().subscribe((token: NbAuthJWTToken) => {
                   if (token.isValid()) {
                     this.user = token.getPayload();
-                    console.log(this.user);
+                    // console.log(this.user);
                   }
                 })
   }
