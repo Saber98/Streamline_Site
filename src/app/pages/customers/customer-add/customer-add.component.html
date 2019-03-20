@@ -40,8 +40,19 @@
                                             <h5>Addresses</h5>
                                         </nb-accordion-item-header>
                                         <nb-accordion-item-body>
-                                            <div class="container-btn">
-                                                <button class="btn-demo" nbButton>Add</button>
+                                            <div class="row">
+                                                <div class="col-sm-1 container-btn">
+                                                    <button class="btn-demo" nbButton size="xsmall"
+                                                        (click)="addAddress($event)">Add</button>
+                                                </div>
+                                            </div>
+                                            <div class="row"><hr></div>
+                                            <div class="row">
+                                                <div class="col-xxxl-4 col-md-6" *ngFor="let address of addresses;">
+                                                    <ngx-address-card [address]="address" (click)="editAddress(address)">
+                                                            <i [ngClass]="addressCard.iconClass" (click)="removeAddress(address)"></i>
+                                                    </ngx-address-card>
+                                                </div>
                                             </div>
                                         </nb-accordion-item-body>
                                     </nb-accordion-item>
@@ -52,14 +63,13 @@
                                         </nb-accordion-item-header>
                                         <nb-accordion-item-body>
                                             <div class="container-btn">
-                                                <button class="btn-demo" nbButton>Add</button>
+                                                <button class="btn-demo" nbButton size="xsmall">Add</button>
                                             </div>
                                         </nb-accordion-item-body>
                                     </nb-accordion-item>
                                 </nb-accordion>
                             </div>
-                            <button class="btn-demo" nbButton hero
-                            status="primary" nbStepperNext>next</button>
+                            <button class="btn-demo" nbButton hero status="primary" nbStepperNext>next</button>
                         </form>
                     </nb-step>
                     <nb-step [stepControl]="secondForm" label="Contacts">

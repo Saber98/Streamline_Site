@@ -64,6 +64,7 @@ const COMPONENTS = [
   NebularSelectComponent,
   CalendarKitFullCalendarShowcaseComponent,
   CalendarKitMonthCellComponent,
+
 ];
 
 const SERVICES = [
