@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NbDialogService } from '@nebular/theme';
-import { AddressPromptComponent } from '../../extra-components/address-card/address-prompt/address-prompt.component';
+import { AddressPromptComponent } from '../../addresses/address-prompt/address-prompt.component';
 import { Address, AddressType } from '../../../@core/data/custom/address';
 import { State } from '../../../@core/data/custom/state';
 

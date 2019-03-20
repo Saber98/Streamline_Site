@@ -5,23 +5,42 @@ import { CustomersRoutingModule, routedComponents } from './customers-routing.mo
 import { NbDialogModule } from '@nebular/theme';
 
 import { DxDataGridModule } from 'devextreme-angular';
-import { AddressCardComponent } from '../extra-components/address-card/address-card.component';
-import { AddressPromptComponent } from '../extra-components/address-card/address-prompt/address-prompt.component';
+import { AddressCardComponent } from '../addresses/address-card/address-card.component';
+import { AddressPromptComponent } from '../addresses/address-prompt/address-prompt.component';
+
+const COMPONENTS = [
+  ...routedComponents,
+  AddressCardComponent,
+  AddressPromptComponent,
+];
+
+const ENTRY_COMPONENTS = [
+  AddressPromptComponent,
+];
+
+const MODULES = [
+  ThemeModule,
+  CustomersRoutingModule,
+  DxDataGridModule,
+  NbDialogModule.forRoot(),
+];
+
+const SERVICES = [
+];
 
 @NgModule({
   imports: [
-    ThemeModule,
-    CustomersRoutingModule,
-    DxDataGridModule,
-    NbDialogModule.forChild(),
+    ...MODULES,
   ],
   declarations: [
-    ...routedComponents,
-    AddressCardComponent,
-    AddressPromptComponent,
+    ...COMPONENTS,
+  ],
+  providers: [
+    ...SERVICES,
   ],
   entryComponents: [
-    AddressPromptComponent,
+    ...ENTRY_COMPONENTS,
   ],
 })
+
 export class CustomersModule { }
