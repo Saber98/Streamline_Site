@@ -4,10 +4,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
+    "url": "git+https://github.com/Spectere99/Streamline_Site.git"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "https://github.com/Spectere99/Streamline_Site/issues"
   },
   "browserslist": [
     "> 1%",
@@ -117,7 +117,7 @@
     "rimraf": "2.6.3",
     "stylelint": "9.10.1",
     "ts-node": "8.0.3",
-    "tslint": "5.14.0",
+    "tslint": "^5.14.0",
     "tslint-language-service": "^0.9.9",
     "typescript": "^3.2.4"
   }
