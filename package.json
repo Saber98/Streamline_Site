@@ -53,14 +53,16 @@
     "@ng-bootstrap/ng-bootstrap": "^4.1.0",
     "@swimlane/ngx-charts": "^10.1.0",
     "@tinymce/tinymce-angular": "^3.0.0",
+    "ajv-keywords": "^3.4.0",
     "angular-tree-component": "8.3.0",
     "angular2-chartjs": "0.5.1",
     "angular2-toaster": "^7.0.0",
     "bootstrap": "4.3.1",
+    "braces": "^2.3.2",
     "chart.js": "2.8.0",
     "ckeditor": "4.11.3",
     "classlist.js": "1.1.20150312",
-    "core-js": "^2.6.4",
+    "core-js": "^2.6.5",
     "devextreme": "^18.2.7",
     "devextreme-angular": "^18.2.7",
     "echarts": "^4.1.0",
@@ -69,6 +71,8 @@
     "ionicons": "^2.0.1",
     "jszip": "^3.2.0",
     "leaflet": "1.4.0",
+    "loader-runner": "^2.4.0",
+    "micromatch": "^3.1.10",
     "nebular-icons": "1.1.0",
     "ng2-ckeditor": "^1.2.2",
     "ng2-completer": "2.0.8",
@@ -89,7 +93,7 @@
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.13.6",
+    "@angular-devkit/build-angular": "^0.13.6",
     "@angular/cli": "^7.3.6",
     "@angular/compiler-cli": "^7.2.10",
     "@angular/language-service": "7.2.10",
@@ -118,6 +122,6 @@
     "ts-node": "8.0.3",
     "tslint": "^5.14.0",
     "tslint-language-service": "^0.9.9",
-    "typescript": "^3.2.4"
+    "typescript": "^3.3.4000"
   }
 }
